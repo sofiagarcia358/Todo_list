@@ -1,4 +1,5 @@
 import { header } from "../components/header/headerComponent.js";
+import { footer } from "../components/footer/footerComponent.js";
 
 export function dashboard(){
 
@@ -6,8 +7,8 @@ export function dashboard(){
 
     //header
     contenedor.appendChild(header())
+    contenedor.appendChild(footer())
 
     return contenedor;
-
 }
 document.body.appendChild(dashboard());
