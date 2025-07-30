@@ -6,7 +6,7 @@ export function header(){
     header.appendChild(h1);
 
     let divTareas = document.createElement('div');
-    divTareas.className = "div-tareas";
+    divTareas.className = "cuadroPendiente";
 
     // Texto y número, todo en una sola línea
     let texto = document.createElement('span');

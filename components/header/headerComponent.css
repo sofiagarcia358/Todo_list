@@ -12,7 +12,7 @@ h1 {
     margin: 0;
 }
 
-.div-tareas {
+.cuadroPendiente {
     display: flex;
     align-items: center;
     gap: 1rem;
