@@ -1,0 +1,94 @@
+/* Contenedor general de todas las tareas */
+.div-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor individual de cada tarea */
+.tarea-item {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.2s;
+}
+
+.tarea-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Número */
+.div-numero {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #444;
+    width: 60px;
+    text-align: center;
+}
+
+/* Título */
+.tarea-titulo {
+    flex: 1;
+    margin: 0 20px;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+/* Estado */
+.tarea-estado {
+    margin-right: 20px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #d1ecf1;
+    color: #0c5460;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+/* Fechas */
+.tarea-fecha-asignacion,
+.tarea-fecha-entrega {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Lista de integrantes */
+.tarea-integrantes {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #333;
+    flex-wrap: wrap;
+}
+
+.tarea-integrantes p {
+    margin: 0;
+    background-color: #e9ecef;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Botón eliminar */
+.tarea-eliminar {
+    margin-left: 20px;
+    color: #dc3545;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.tarea-eliminar:hover {
+    color: #a71d2a;
+}

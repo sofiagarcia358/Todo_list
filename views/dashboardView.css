@@ -7,5 +7,5 @@
 }
 .seccion-1{
     display: grid;
-    grid-template-columns: 75% 100%;
+    grid-template-columns: 75% 25%;
 }
