@@ -1,0 +1,49 @@
+.div-forms {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 400px; /* Aumentado */
+}
+
+.div-forms input[type="text"],
+.div-forms select,
+.div-forms textarea,
+.div-forms input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.div-forms textarea {
+    resize: vertical;
+    height: 70px;
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+
+.form {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+

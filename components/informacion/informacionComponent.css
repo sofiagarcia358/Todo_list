@@ -1,5 +1,4 @@
 .div-informacion{
-    border: 1px solid red;
     padding: 20px;
     font-family: 'Arial', sans-serif;
 
@@ -77,4 +76,11 @@
     height: 32px;
     border-radius: 50%;
     border: 2px solid black;
+}
+@media (min-width: 360px) and (max-width: 600px) {
+   .div-informacion {
+    justify-items: center; /* Centra horizontalmente cada elemento hijo */
+    align-items: center;   /* Centra verticalmente */
+    
+}
 }

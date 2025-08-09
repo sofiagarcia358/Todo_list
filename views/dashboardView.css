@@ -8,4 +8,37 @@
 .seccion-1{
     display: grid;
     grid-template-columns: 75% 25%;
+  
 }
+/* Teléfonos pequeños (hasta 360px) */
+@media (max-width: 360px) {
+  .seccion-1{
+    grid-template-columns: auto;
+    
+}
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .seccion-1{
+    grid-template-columns: auto;
+    
+}
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .seccion-1{
+    grid-template-columns: auto;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+ .seccion-1{
+    grid-template-columns: auto;
+
+}
+}
+
+
+
+
+

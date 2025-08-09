@@ -5,6 +5,7 @@
     gap: 20px;
     padding: 30px;
     font-family: Arial, sans-serif;
+    font-size: 3rem;
 }
 
 /* Contenedor individual de cada tarea */
@@ -91,4 +92,86 @@
 
 .tarea-eliminar:hover {
     color: #a71d2a;
+}
+@media (max-width: 360px) {
+  .tarea-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centra horizontalmente cada elemento hijo */
+    align-items: center;   /* Centra verticalmente */
+    text-align: center;
+    
+    gap: 12px; /* Espacio entre elementos */
+    border: 2px solid #ccc;
+    padding: 25px 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+.tarea-titulo,
+.tarea-estado,
+.tarea-fecha-asignacion,
+.tarea-fecha-entrega,
+.tarea-integrantes,
+.tarea-eliminar {
+    margin: 0;
+    width: 100%;
+}
+
+}
+
+
+@media (min-width: 360px) and (max-width: 600px) {
+   .tarea-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centra horizontalmente cada elemento hijo */
+    align-items: center;   /* Centra verticalmente */
+    text-align: center;
+    
+    gap: 12px; /* Espacio entre elementos */
+    border: 2px solid #ccc;
+    padding: 25px 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   .tarea-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centra horizontalmente cada elemento hijo */
+    align-items: center;   /* Centra verticalmente */
+    text-align: center;
+    
+    gap: 8px; /* Espacio entre elementos */
+    border: 2px solid #ccc;
+    padding: 25px 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tarea-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centra horizontalmente cada elemento hijo */
+    align-items: center;   /* Centra verticalmente */
+    text-align: center;
+    
+    gap: 8px; /* Espacio entre elementos */
+    border: 2px solid #ccc;
+    padding: 25px 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
 }
