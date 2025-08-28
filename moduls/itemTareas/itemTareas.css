@@ -58,10 +58,26 @@
 .tarea-fecha-asignacion,
 .tarea-fecha-entrega {
     margin: 0 10px;
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.3rem;  /* antes 1rem */
+    color: #444;        /* un poco más oscuro para mejor visibilidad */
+    font-weight: 500;   /* más marcadas */
     white-space: nowrap;
 }
+
+/* Botón eliminar */
+.tarea-eliminar {
+    margin-left: 20px;
+    color: #dc3545;
+    font-size: 1.8rem;   /* antes 1.2rem → más grande */
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.tarea-eliminar:hover {
+    color: #a71d2a;
+}
+
 
 /* Lista de integrantes */
 .tarea-integrantes {
@@ -80,19 +96,7 @@
     border-radius: 6px;
 }
 
-/* Botón eliminar */
-.tarea-eliminar {
-    margin-left: 20px;
-    color: #dc3545;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.2s;
-}
 
-.tarea-eliminar:hover {
-    color: #a71d2a;
-}
 @media (max-width: 360px) {
   .tarea-item {
     display: grid;
@@ -174,4 +178,12 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.2s;
 }
+}
+@media (min-width: 1024px) and (max-width: 1160px) {
+  .tarea-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    }
+
 }

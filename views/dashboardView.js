@@ -3,38 +3,23 @@ import { footer } from "../components/footer/footerComponent.js";
 import { informacion } from "../components/informacion/informacionComponent.js";
 import { tareas } from "../components/tareas/tareaComponent.js";
 
-export function dashboard(){
+
+export async function dashboard(){
+    try{
+
+        const resultado = await fetch("http://localhost:3000/tareas");
+        const datos = await resultado.json();
+        console.log(datos)
+
+        
 
     // Base de datos simulada de tareas
-let tareasDb = [
-    {
-        titulo: "Hola mundo",
-        estado: "Pendiente",
-        descripcion: "hacer tareas",
-        fechaAs: "2025-07-28",
-        fechaEn: "2025-08-05",
-        integrantes: ["😎", "😚", "🙂‍↔️"]
-    },
-    {
-        titulo: "Hola mundo 2",
-        estado: "En progreso",
-        descripcion: "hacer tareas",
-        fechaAs: "2025-07-29",
-        fechaEn: "2025-08-06",
-        integrantes: ["😹", "😿"]
-    },
-    {
-        titulo: "Hola mundo 3",
-        estado: "Completada",
-        descripcion: "hacer tareas",
-        fechaAs: "2025-07-30",
-        fechaEn: "2025-08-07",
-        integrantes: ["🫩", "🤑", "🤡"]
-    }
-];
+    let tareasDb = datos;
 
     let dashboard = document.createElement('section');
     dashboard.className = "dashboard";
+
+    console.log(tareasDb)
 
     //header
     dashboard.appendChild(header())
@@ -51,5 +36,17 @@ let tareasDb = [
     dashboard.appendChild(footer())
     
     return dashboard;
+
+
+    } catch(error){
+        console.error("error", error)
+
+    }
 }
-document.body.appendChild(dashboard());
+
+
+dashboard().then(elem => {
+    if (elem) {
+        document.body.appendChild(elem);
+    }
+});

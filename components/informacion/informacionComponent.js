@@ -33,10 +33,10 @@ export function informacion(tarea) {
 
     let divEstado = document.createElement('div');
     divEstado.className = "estado";
-    divEstado.innerText = tarea.estado;
+    divEstado.innerText = tarea.estado_tarea;
 
     let titulo = document.createElement('h3');
-    titulo.innerText = tarea.titulo;
+    titulo.innerText = tarea.nombre;
 
     let parrafo = document.createElement('p');
     parrafo.innerText = tarea.descripcion;
@@ -50,12 +50,12 @@ export function informacion(tarea) {
     let divAsignaciones = document.createElement('div');
     divAsignaciones.className = "div-asignaciones";
 
-    tarea.integrantes.forEach(emoji => {
-        let span = document.createElement('span');
-        span.className = "emoji-integrante";
-        span.innerText = emoji;
-        divAsignaciones.appendChild(span);
-    });
+    //tarea.integrantes.forEach(emoji => {
+        //let span = document.createElement('span');
+       // span.className = "emoji-integrante";
+       // span.innerText = emoji;
+       // divAsignaciones.appendChild(span);
+    //});
 
     divIntegrantes.appendChild(labelIntegrantes);
     divIntegrantes.appendChild(divAsignaciones);

@@ -6,12 +6,12 @@ export function tareas(tareasDb) {
 
     tareasDb.forEach((e, i) => {
         div.appendChild(itemTarea(
-            i + 1,           // índice de la tarea (1, 2, 3...)
-            e.titulo,        // título
-            e.estado,        // estado
-            e.fechaAs,       // fecha de asignación
-            e.fechaEn,       // fecha de entrega
-            e.integrantes          // lista de integrantes
+            e.id,           // índice de la tarea (1, 2, 3...)
+            e.nombre,        // título
+            e.estado_tarea,        // estado
+            e.fecha_asignada,       // fecha de asignación
+            e.fecha_entrega,       // fecha de entrega
+            []        // lista de integrantes
         ));
     });
 
