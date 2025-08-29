@@ -3,50 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <title>Todo List - Estamos trabajando</title>
+  <link rel="stylesheet" href="config.css">
 </head>
-<link rel="stylesheet" href="config.css">
 <body>
-    <div class="cartel">
-        <div class="icon">🛠️</div>
-        <h1>Todo List</h1>
-        <p>Estamos trabajando...</p>
-      </div>
-      <style>
-        body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ece9e6, #ffffff);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  <div class="cartel">
+    <div class="icon">🛠️</div>
+    <h1>Todo List</h1>
+    <p>Estamos trabajando...</p>
 
-  .cartel {
-    background-color: #ffffff;
-    padding: 50px 80px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-  }
+    
+    <button class="btn-entrar" onclick="window.location.href='./pages/dashboard.html'">
+      Entrar
+    </button>
+  </div>
 
-  .cartel h1 {
-    font-size: 32px;
-    margin: 0 0 10px;
-    color: #333;
-  }
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  .cartel p {
-    font-size: 20px;
-    color: #666;
-  }
+    .cartel {
+      background-color: #ffffff;
+      padding: 50px 80px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-  .icon {
-    font-size: 40px;
-    color: #fbc02d;
-    margin-bottom: 10px;
-  }
-      </style>
+    .cartel h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .cartel p {
+      font-size: 20px;
+      color: #666;
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #fbc02d;
+      margin-bottom: 10px;
+    }
+
+    /* Estilos del botón */
+    .btn-entrar {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      
+    }
+
+    .btn-entrar:hover {
+      background-color: #45a049;
+    }
+  </style>
 </body>
 </html>
