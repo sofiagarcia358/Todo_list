@@ -7,7 +7,8 @@ import { tareas } from "../components/tareas/tareaComponent.js";
 export async function dashboard(){
     try{
 
-        const resultado = await fetch("http://localhost:3000/tareas");
+        const resultado = await fetch("https://backend-todolist-4l86.onrender.com/tareas");
+
         const datos = await resultado.json();
         console.log(datos)
 
