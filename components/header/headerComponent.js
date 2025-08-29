@@ -14,7 +14,7 @@ export function header(){
     texto.className = "texto-pendiente";
 
     let numero = document.createElement('span');
-    numero.innerText = "3";
+    numero.innerText = "10";
     numero.className = "cuadro-numero";
 
     divTareas.appendChild(texto);
